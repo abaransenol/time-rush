@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CharacterController123 : MonoBehaviour
 {
     Rigidbody2D charphysic;
@@ -68,5 +68,12 @@ public class CharacterController123 : MonoBehaviour
     {
         isgrounded = Physics2D.OverlapCircle(groundcheckpos.position,groundcheckrad,groundchecklayer);
         animations.SetBool("IsGroundedAnim",isgrounded);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("deadline"))
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 }
