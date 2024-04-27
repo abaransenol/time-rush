@@ -69,7 +69,7 @@ public class CharacterController123 : MonoBehaviour
         isgrounded = Physics2D.OverlapCircle(groundcheckpos.position,groundcheckrad,groundchecklayer);
         animations.SetBool("IsGroundedAnim",isgrounded);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("deadline"))
         {
@@ -77,7 +77,7 @@ public class CharacterController123 : MonoBehaviour
         } 
         else if (collision.CompareTag("fan")) 
         {
-            charphysic.AddForce(new Vector2(0f, jumpspeed * 3));
+            charphysic.AddForce(new Vector2(0f, jumpspeed));
         }
     }
 }
