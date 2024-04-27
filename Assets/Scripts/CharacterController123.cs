@@ -67,5 +67,6 @@ public class CharacterController123 : MonoBehaviour
     void OnGroundCheck()
     {
         isgrounded = Physics2D.OverlapCircle(groundcheckpos.position,groundcheckrad,groundchecklayer);
+        animations.SetBool("IsGroundedAnim",isgrounded);
     }
 }
