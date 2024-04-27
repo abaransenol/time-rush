@@ -74,6 +74,10 @@ public class CharacterController123 : MonoBehaviour
         if (collision.CompareTag("deadline"))
         {
             SceneManager.LoadScene(1);
+        } 
+        else if (collision.CompareTag("fan")) 
+        {
+            charphysic.AddForce(new Vector2(0f, jumpspeed * 3));
         }
     }
 }
