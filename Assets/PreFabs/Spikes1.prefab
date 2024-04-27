@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 7780138741380539285}
   - component: {fileID: 5065521249401092317}
   - component: {fileID: 6899130998084063807}
-  - component: {fileID: 5441191461859090227}
   m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
@@ -284,42 +283,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!19719996 &5441191461859090227
-TilemapCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6820974341147106452}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0
-  m_UseDelaunayMesh: 0
 --- !u!1 &7238238882617916274
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +294,7 @@ GameObject:
   - component: {fileID: 3023216661055589315}
   - component: {fileID: 7408860272296755050}
   - component: {fileID: 9062858925414968964}
-  - component: {fileID: 1735046049272961143}
+  - component: {fileID: 5418956468488380215}
   m_Layer: 6
   m_Name: Spikes1
   m_TagString: Untagged
@@ -641,8 +604,8 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
---- !u!61 &1735046049272961143
-BoxCollider2D:
+--- !u!19719996 &5418956468488380215
+TilemapCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -673,19 +636,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.0041919, y: 14.993881}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8.014737, y: 2.0126343}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &8975418711808338892
 GameObject:
   m_ObjectHideFlags: 0
