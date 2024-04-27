@@ -6,7 +6,9 @@ public class CharacterController123 : MonoBehaviour
 {
     Rigidbody2D charphysic;
     public float Boost = 1f;
+    public float jumpspeed = 1f;
     bool facingright = true;
+    bool isgrounded = false;
     Animator animations;
     // Start is called before the first frame update
     void Start()
@@ -30,7 +32,10 @@ public class CharacterController123 : MonoBehaviour
         {
             FlipFace();
         }
-
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            Jump();
+        }
     }
     void Horizontalmove()
     {
@@ -47,5 +52,14 @@ public class CharacterController123 : MonoBehaviour
         Vector3 TempLocScal = transform.localScale;
         TempLocScal.x *= -1;
         transform.localScale = TempLocScal;
+    }
+    void Jump()
+    {
+        charphysic.AddForce(new Vector2(0f,jumpspeed));
+
+    }
+    void OnGroundCheck()
+    {
+        //isgrounded = Physics2D.OverlapCircle();
     }
 }
