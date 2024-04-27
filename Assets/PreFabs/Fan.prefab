@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 242984286244095243}
   - component: {fileID: 5695898977466728641}
   - component: {fileID: 7334960539125300880}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -471,7 +471,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2442961625312002154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 5712565235636876905}
   - component: {fileID: 9060697069660801887}
   - component: {fileID: 6476207900594617198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 4248981793096369232}
   - component: {fileID: 8427261167426471418}
   - component: {fileID: 6396158933905115621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -781,7 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2549911713338261630}
   - component: {fileID: 334158338481608630}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -824,6 +824,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2442961625312002154}
     m_Modifications:
+    - target: {fileID: 1609937179675200526, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3346359526083297373, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.021523714
@@ -867,6 +871,10 @@ PrefabInstance:
     - target: {fileID: 5125169644420451583, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
       propertyPath: m_Name
       value: FanObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125169644420451583, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

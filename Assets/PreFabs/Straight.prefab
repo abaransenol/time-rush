@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2265313987662381877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8696105748063317700}
   - component: {fileID: 7978927025913702191}
   - component: {fileID: 114458511499703251}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 9075196348234101249}
   - component: {fileID: 5773337948859627806}
   - component: {fileID: 2591160675965200339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Straight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   - component: {fileID: 138860235046747161}
   - component: {fileID: 4340619140936105702}
   - component: {fileID: 1973355260254478566}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5715968496048231530}
   - component: {fileID: 7410305328059406417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}

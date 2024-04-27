@@ -6,9 +6,13 @@ public class CharacterController123 : MonoBehaviour
 {
     Rigidbody2D charphysic;
     public float Boost = 1f;
-    public float jumpspeed = 1f;
+    public float jumpspeed = 1f, jumpfreq = 1f, nextjumptime;
     bool facingright = true;
-    bool isgrounded = false;
+    public bool isgrounded = false;
+    public Transform groundcheckpos;
+    public float groundcheckrad;
+    public LayerMask groundchecklayer;
+    
     Animator animations;
     // Start is called before the first frame update
     void Start()
@@ -24,6 +28,7 @@ public class CharacterController123 : MonoBehaviour
     void Update()
     {
         Horizontalmove();
+        OnGroundCheck();
         if (charphysic.velocity.x < 0 && facingright) 
         {
             FlipFace();
@@ -32,8 +37,9 @@ public class CharacterController123 : MonoBehaviour
         {
             FlipFace();
         }
-        if (Input.GetAxis("Vertical") > 0)
+        if (Input.GetAxis("Vertical") > 0 && isgrounded && (nextjumptime < Time.timeSinceLevelLoad))
         {
+            nextjumptime = Time.timeSinceLevelLoad + jumpfreq;
             Jump();
         }
     }
@@ -60,6 +66,6 @@ public class CharacterController123 : MonoBehaviour
     }
     void OnGroundCheck()
     {
-        //isgrounded = Physics2D.OverlapCircle();
+        isgrounded = Physics2D.OverlapCircle(groundcheckpos.position,groundcheckrad,groundchecklayer);
     }
 }

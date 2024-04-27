@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6661837937299312931}
   - component: {fileID: 6520271728252564219}
   - component: {fileID: 677070942112269097}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360908984210588281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spikes2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ Transform:
   m_GameObject: {fileID: 3738662269102639969}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.938006, y: 5.26974, z: -0.12147826}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 6611521348675789159}
   - component: {fileID: 5241289216088493397}
   - component: {fileID: 2245861868396944803}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -332,7 +332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5136797919995539405}
   - component: {fileID: 3652986455081615029}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +382,7 @@ GameObject:
   - component: {fileID: 1527480950344652898}
   - component: {fileID: 5198861194451975660}
   - component: {fileID: 3167094112559980868}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spikes2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,6 +915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikesPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1494563422548373554, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.17961168
@@ -976,6 +980,10 @@ PrefabInstance:
     - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_Name
       value: SpikesPrefab (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1494563422548373554, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1039,6 +1047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpikesPrefab (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1494563422548373554, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.8170061
@@ -1100,6 +1112,10 @@ PrefabInstance:
     - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_Name
       value: SpikesPrefab (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 59303238660682397, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1494563422548373554, guid: 28393ed1e45bcf6479b0c07a32de9ce8, type: 3}
       propertyPath: m_LocalPosition.x

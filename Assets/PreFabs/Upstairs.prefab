@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1117076500356625701}
   - component: {fileID: 9050957359853937356}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 6002882013503587612}
   - component: {fileID: 744720688132531289}
   - component: {fileID: 1028177023859026751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upstairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3832621697432127031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Upstairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 8568233102984183247}
   - component: {fileID: 7420413839533538736}
   - component: {fileID: 6503292760987057101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 6144255566117519974}
   - component: {fileID: 2104284870254837334}
   - component: {fileID: 3912514112998099846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
