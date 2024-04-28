@@ -732,10 +732,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2442961625312002154}
     m_Modifications:
-    - target: {fileID: 1609937179675200526, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3346359526083297373, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.021523714
@@ -779,10 +775,6 @@ PrefabInstance:
     - target: {fileID: 5125169644420451583, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
       propertyPath: m_Name
       value: FanObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 5125169644420451583, guid: 1f258e91a308b3b469c4ffda928e08e1, type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
