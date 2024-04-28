@@ -12,6 +12,7 @@ public class CharacterController123 : MonoBehaviour
     public Transform groundcheckpos;
     public float groundcheckrad;
     public LayerMask groundchecklayer;
+    private float tempjumpspeed = 1f;
     
     Animator animations;
     // Start is called before the first frame update
@@ -74,10 +75,7 @@ public class CharacterController123 : MonoBehaviour
         if (collision.CompareTag("deadline"))
         {
             SceneManager.LoadScene(1);
-        } 
-        else if (collision.CompareTag("fan")) 
-        {
-            charphysic.AddForce(new Vector2(0f, jumpspeed));
+
         }
     }
 }

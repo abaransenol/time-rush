@@ -17,4 +17,12 @@ public class PlayerManager : MonoBehaviour
     {
         
     }
+
+    void AmIDead()
+    {
+        if (isDead)
+        {
+
+        }
+    }
 }
