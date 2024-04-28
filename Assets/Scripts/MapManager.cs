@@ -25,7 +25,7 @@ public class MapManager : MonoBehaviour
         
     }
 
-    void loadMap()
+    public void loadMap()
     {
         if (spawnPoint == null)
         {
@@ -33,7 +33,9 @@ public class MapManager : MonoBehaviour
 
         } else
         {
-            spawnPoint = currentMap.transform.GetChild(1).gameObject.transform;
+            var child1 = currentMap.transform.GetChild(0).gameObject;
+
+            var variable = child1.transform.GetChild(1).gameObject.transform;
         }
         
         generateRandomMap();

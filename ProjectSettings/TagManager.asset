@@ -7,6 +7,7 @@ TagManager:
   - deadline
   - fan
   - fire
+  - map
   layers:
   - Default
   - TransparentFX

@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MenuManagerInGameScene : MonoBehaviour
+public class PlayerLiveController : MonoBehaviour
 {
     public GameObject dieScreen, onGameScreen;
 
@@ -17,12 +15,7 @@ public class MenuManagerInGameScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    public void HomeButton()
-    {
-        SceneManager.LoadScene(0);
+        
     }
 
     public void PlayerDied()

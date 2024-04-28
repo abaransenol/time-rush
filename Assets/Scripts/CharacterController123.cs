@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CharacterController123 : MonoBehaviour
 {
+    public PlayerLiveController playerLiveController;
+    public MapManager mapManager;
+
     Rigidbody2D charphysic;
     public float Boost = 1f;
     public float jumpspeed = 1f, jumpfreq = 1f, nextjumptime;
@@ -56,7 +59,7 @@ public class CharacterController123 : MonoBehaviour
 
     void PlayerDied()
     {
-        SceneManager.LoadScene(0);
+        playerLiveController.PlayerDied();
     }
 
 
@@ -84,7 +87,7 @@ public class CharacterController123 : MonoBehaviour
         isgrounded = Physics2D.OverlapCircle(groundcheckpos.position,groundcheckrad,groundchecklayer);
         animations.SetBool("IsGroundedAnim",isgrounded);
     }
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("deadline"))
         {
@@ -93,6 +96,11 @@ public class CharacterController123 : MonoBehaviour
         } else if (collision.CompareTag("fire"))
         {
             PlayerDied();
+
+        } else if (collision.CompareTag("map"))
+        {
+            print("hey");
+            mapManager.loadMap();
         }
     }
 }
