@@ -25,6 +25,6 @@ public class TimeManager : MonoBehaviour
         }
 
         time -= Time.deltaTime;
-        GameObject.Find("TimeText").GetComponent<Text>().text = "ETA : " + Math.Round(time, 2);
+        GameObject.Find("TimeText").GetComponent<Text>().text = "Seconds: " + Math.Round(time, 2);
     }
 }
