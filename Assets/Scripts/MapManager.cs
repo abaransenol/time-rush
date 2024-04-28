@@ -35,7 +35,17 @@ public class MapManager : MonoBehaviour
         {
             var child1 = currentMap.transform.GetChild(0).gameObject;
 
-            var variable = child1.transform.GetChild(1).gameObject.transform;
+            var enterTransform = child1.transform.GetChild(0).gameObject.transform.position;
+            var exitTransform = child1.transform.GetChild(1).gameObject.transform.position;
+
+            var totalX = exitTransform.x - enterTransform.x;
+            var totalY = exitTransform.y - enterTransform.y;
+
+            var tempSpawnPointPosition = child1.transform.GetChild(1).gameObject.transform.position;
+            tempSpawnPointPosition.x = spawnPoint.position.x + totalX;
+            tempSpawnPointPosition.y = spawnPoint.position.y + totalY;
+            spawnPoint.position = tempSpawnPointPosition;
+
         }
         
         generateRandomMap();
