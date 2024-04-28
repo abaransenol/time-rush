@@ -8,6 +8,7 @@ public class MapManager : MonoBehaviour
 {
     public GameObject startMap;
     public List<GameObject> maps;
+    public GameObject onGame;
 
     private GameObject currentMap;
     private Transform spawnPoint;
@@ -36,7 +37,7 @@ public class MapManager : MonoBehaviour
         }
         
         generateRandomMap();
-        Instantiate(currentMap, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(currentMap, spawnPoint.position, spawnPoint.rotation, onGame.transform);
     }
 
     void generateRandomMap()

@@ -12,7 +12,6 @@ public class CharacterController123 : MonoBehaviour
     public Transform groundcheckpos;
     public float groundcheckrad;
     public LayerMask groundchecklayer;
-    private float tempjumpspeed = 1f;
     
     Animator animations;
     // Start is called before the first frame update
@@ -44,14 +43,29 @@ public class CharacterController123 : MonoBehaviour
             Jump();
         }
     }
+
+    
+
+
+
+
+
+
+
+
+
+    void PlayerDied()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
+
+
     void Horizontalmove()
     {
         charphysic.velocity = new Vector2(Input.GetAxis("Horizontal") * Boost, charphysic.velocity.y);
         animations.SetFloat("CharSpeed", Mathf.Abs(charphysic.velocity.x));
-    }
-    void FixedUpdate()
-    {
-        
     }
     void FlipFace()
     {
@@ -74,8 +88,11 @@ public class CharacterController123 : MonoBehaviour
     {
         if (collision.CompareTag("deadline"))
         {
-            SceneManager.LoadScene(1);
+            PlayerDied();
 
+        } else if (collision.CompareTag("fire"))
+        {
+            PlayerDied();
         }
     }
 }
