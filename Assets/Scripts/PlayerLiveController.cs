@@ -20,7 +20,6 @@ public class PlayerLiveController : MonoBehaviour
 
     public void PlayerDied()
     {
-        Time.timeScale = 0;
         this.onGameScreen.SetActive(false);
         this.dieScreen.SetActive(true);
     }

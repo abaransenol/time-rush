@@ -5,6 +5,7 @@ using UnityEngine;
 public class AppleManager : MonoBehaviour
 {
     Animator animations;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,6 @@ public class AppleManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         animations.SetBool("is_touched",true);
-        
     }
     void Destroy1()
     {

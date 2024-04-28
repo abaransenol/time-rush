@@ -8,6 +8,8 @@ TagManager:
   - fan
   - fire
   - map
+  - spike
+  - apple
   layers:
   - Default
   - TransparentFX

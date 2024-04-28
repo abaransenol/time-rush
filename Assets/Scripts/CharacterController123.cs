@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,7 @@ public class CharacterController123 : MonoBehaviour
 {
     public PlayerLiveController playerLiveController;
     public MapManager mapManager;
+    public TimeManager timeManager;
 
     Rigidbody2D charphysic;
     public float Boost = 1f;
@@ -30,6 +32,9 @@ public class CharacterController123 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float time = 0;
+        time += Time.deltaTime;
+
         Horizontalmove();
         OnGroundCheck();
         if (charphysic.velocity.x < 0 && facingright) 
@@ -99,8 +104,15 @@ public class CharacterController123 : MonoBehaviour
 
         } else if (collision.CompareTag("map"))
         {
-            print("hey");
             mapManager.loadMap();
+
+        } else if (collision.CompareTag("spike"))
+        {
+            PlayerDied();
+
+        } else if (collision.CompareTag("apple"))
+        {
+            timeManager.time += 5;
         }
     }
 }
