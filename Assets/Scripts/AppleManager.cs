@@ -23,6 +23,6 @@ public class AppleManager : MonoBehaviour
     }
     void Destroy1()
     {
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
